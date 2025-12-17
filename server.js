@@ -15,6 +15,10 @@ app.use(cors());
 
 ConnectDB();
 
+app.app.get("/", (req, res) => {
+  res.send("Student Event Approval Backend is running!");
+});
+
 
 app.use("/api/auth",authRoutes);
 app.use("/api/events",eventRoutes);
