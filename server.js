@@ -19,8 +19,8 @@ ConnectDB();
 app.use("/api/auth",authRoutes);
 app.use("/api/events",eventRoutes);
 
-// const PORT = process.env.PORT;
+const PORT = process.env.PORT;
 
-// app.listen(PORT,()=>console.log('Student Approval App Running...'))
+app.listen(PORT,()=>console.log('Student Approval App Running...'))
 
 module.exports = app;
